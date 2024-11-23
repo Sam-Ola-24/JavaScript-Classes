@@ -16,82 +16,87 @@
 
     <div id="container">
         <span>
-        <h2>Mouse Event</h2>
+            <h2>Mouse Event</h2>
 
-        A button to demonstrate mouse events (e.g., hovering and leaving the button should change a message).
-        <p class="form">
-<br>
-            <button type="submit" id="hover"> Hover me!!</button> <br><br>
+            A button to demonstrate mouse events (e.g., hovering and leaving the button should change a message).
+            <p class="form">
+                <br>
+                <button type="submit" id="hover"> Hover me!!</button> <br><br>
             <p id="hover-space"></p>
 
             </p>
-            
-        </p>
-        <br>
-    </span>
 
-    <span>
-        <h2>Keyboard Event</h2>
-        An input field to capture keyboard events (e.g., display the latest key pressed).
-        <p class="form">
-            <input type="text" id="keboard-event" />
+            </p>
             <br>
-            
-        </p>
-        <br>
-    </span>
+        </span>
 
-    <span>
-        <h2>Form Event</h2>
-        <p>
-            A simple form to handle form events (e.g., display a message when the form is submitted without refreshing the page).
+        <span>
+            <h2>Keyboard Event</h2>
+            An input field to capture keyboard events (e.g., display the latest key pressed).
+            <p class="form">
+                <input type="text" id="keyboard-event" placeholder="Please type in here!" />
+                <br>
+            <p id="keyboard-space"></p>
+            </p>
             <br>
+        </span>
 
-            <form action="#">
+        <span>
+            <h2>Form Event</h2>
+            <p>
+                A simple form to handle form events (e.g., display a message when the form is submitted without
+                refreshing the page).
+                <br>
+
+            <form action="" id="myForm">
+                <p id="error"></p>
                 <label for="">First Name:</label><br>
-                <input type="text" id="firstname" /><br>
+                <input type="text" id="firstname" required /><br>
                 <label for="">Last Name:</label><br>
-                <input type="text" id="lastname" /><br>
+                <input type="text" id="lastname" required /><br>
                 <br>
 
                 <button type="submit" id="submit"> Submit </button>
             </form>
 
-            <strong>Congrats! Form submission was successful!!</strong>
-        </p>
-        <br>
-    </span>
-
-    <span>
-        <h2>Focus and Blur Event</h2>
-        <p>
-            An input field to handle focus and blur events (e.g., update a message when the input gains or loses focus).
+            <p id="form-display"></p>
+            </p>
             <br>
+        </span>
+
+        <span>
+            <h2>Focus and Blur Event</h2>
+            <p>
+                An input field to handle focus and blur events (e.g., update a message when the input gains or loses
+                focus).
+                <br>
             <form action="#">
-                <label for="">First Name:</label><br>
-                <input type="text" id="firstname" /><br>
-                <label for="">Last Name:</label><br>
-                <input type="text" id="lastname" /><br>
+                <label for="" id="">First Name:</label><br>
+                <input type="text" id="blur-input" /><br>
+                <label for="" id="">Last Name:</label><br>
+                <input type="text" id="blur-display" /><br>
                 <br>
 
-                <button type="submit" id="submit"> Submit </button>
             </form>
-        </p>
+            </p>
 
-    </span>
+        </span>
     </div>
 
     <div class="container">
         <p>
-            A container with multiple buttons to demonstrate event delegation (e.g., clicking any button inside the container displays its label or content).
-<br>
-<h2> Click anywhere in this section to play a game!</h2>
+            A container with multiple buttons to demonstrate event delegation (e.g., clicking any button inside the
+            container displays its label or content).
+            <br>
+        <h2 id="start-game"> Click on this line ------------ to play a game!<br>
+        </h2>
 
         </p>
-        <table>
+        <table id="dice-table">
+
             <thead>
-                <th></th>
-                <th></th>
+                <th> Dice Roll</th>
+                <th>Value</th>
             </thead>
             <tbody>
                 <tr>
@@ -102,17 +107,21 @@
                     <td><button id="second-dice-button">Click to roll a dice</button></td>
                     <td><input type="number" id="second-dice-roll" /></td>
                 </tr>
+                <tr>
+                    <td><button id="winner">Click to grab your prize</button></td>
+                    <td></td>
+                </tr>
             </tbody>
 
-            <p id="dice-feedback"></p>
-            
+            <p id="dice-feedback">
+            </p>
         </table>
-        <p><strong>Nice Roll! Better luck next time!!</strong></p>
+
         <br><br>
     </div>
     <br><br>
 
- 
+
     <footer>
         &copy; 2024 Akinola, Oluwaseun
     </footer>
