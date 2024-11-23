@@ -14,28 +14,103 @@
         JavaScript Events
     </header>
 
-        <h2>Welcome to my Blog!</h2>
-        <p>In this exercise, I am creating a blog website with a homepage that displays a list of blog posts, a page to
-            create new posts, and the ability to edit or delete existing posts.
-            This project will be managed through Git and GitHub with proper version control workflows.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed veniam aperiam expedita quaerat et. Rerum
-            provident asperiores deleniti veritatis, iure maxime ipsam, excepturi voluptatum sapiente cum fuga impedit
-            saepe harum facere ad esse nisi laboriosam. Necessitatibus explicabo, ipsum obcaecati libero magnam
-            voluptate beatae cum reprehenderit minus, porro neque veniam corrupti optio adipisci mollitia est amet aut
-            ratione nulla eveniet reiciendis itaque fuga! Dolorem, ratione iure? Magni aperiam exercitationem sequi
-            molestiae quidem incidunt illum nulla velit iste architecto cupiditate aspernatur, suscipit tenetur repellat
-            eveniet esse. Repudiandae, eos itaque id, vero quia sequi, magni quam distinctio saepe ipsum eius
-            architecto. Cum blanditiis alias porro et aut sit? Fugiat repudiandae modi deleniti? Obcaecati, enim
-            exercitationem? Ipsa, amet veniam ea perferendis nesciunt dolor voluptas cupiditate itaque possimus beatae
-            similique rerum earum eius atque maiores expedita ex ratione aliquam odio maxime recusandae deserunt velit
-            voluptate. Cumque, quas exercitationem rem sapiente quasi minus dignissimos nemo nam fugiat itaque quo
-            dolor. Assumenda hic corrupti eos obcaecati iure eveniet neque sapiente sint ducimus voluptatibus nobis cum
-            harum porro eum tempore recusandae, eaque officiis, laborum nisi? Ratione, cumque? Vitae nihil veritatis
-            expedita quidem repudiandae porro sequi,
-            accusantium possimus voluptatem sit ducimus ex adipisci distinctio ea, quae omnis esse culpa.
+    <div id="container">
+        <span>
+        <h2>Mouse Event</h2>
+
+        A button to demonstrate mouse events (e.g., hovering and leaving the button should change a message).
+        <p class="form">
+<br>
+            <button type="submit" id="hover"> Hover me!!</button> <br><br>
+            <p id="hover-space"></p>
+
+            </p>
+            
         </p>
+        <br>
+    </span>
+
+    <span>
+        <h2>Keyboard Event</h2>
+        An input field to capture keyboard events (e.g., display the latest key pressed).
+        <p class="form">
+            <input type="text" id="keboard-event" />
+            <br>
+            
+        </p>
+        <br>
+    </span>
+
+    <span>
+        <h2>Form Event</h2>
+        <p>
+            A simple form to handle form events (e.g., display a message when the form is submitted without refreshing the page).
+            <br>
+
+            <form action="#">
+                <label for="">First Name:</label><br>
+                <input type="text" id="firstname" /><br>
+                <label for="">Last Name:</label><br>
+                <input type="text" id="lastname" /><br>
+                <br>
+
+                <button type="submit" id="submit"> Submit </button>
+            </form>
+
+            <strong>Congrats! Form submission was successful!!</strong>
+        </p>
+        <br>
+    </span>
+
+    <span>
+        <h2>Focus and Blur Event</h2>
+        <p>
+            An input field to handle focus and blur events (e.g., update a message when the input gains or loses focus).
+            <br>
+            <form action="#">
+                <label for="">First Name:</label><br>
+                <input type="text" id="firstname" /><br>
+                <label for="">Last Name:</label><br>
+                <input type="text" id="lastname" /><br>
+                <br>
+
+                <button type="submit" id="submit"> Submit </button>
+            </form>
+        </p>
+
+    </span>
     </div>
+
+    <div class="container">
+        <p>
+            A container with multiple buttons to demonstrate event delegation (e.g., clicking any button inside the container displays its label or content).
+<br>
+<h2> Click anywhere in this section to play a game!</h2>
+
+        </p>
+        <table>
+            <thead>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="dice-button">Click to roll a dice</button></td>
+                    <td><input type="number" id="dice-roll" /></td>
+                </tr>
+                <tr>
+                    <td><button id="second-dice-button">Click to roll a dice</button></td>
+                    <td><input type="number" id="second-dice-roll" /></td>
+                </tr>
+            </tbody>
+
+            <p id="dice-feedback"></p>
+            
+        </table>
+        <p><strong>Nice Roll! Better luck next time!!</strong></p>
+        <br><br>
+    </div>
+    <br><br>
 
  
     <footer>
