@@ -89,7 +89,6 @@ function game() {
 
   function checkWin() {
     let score = diceValue.value + diceValueTwo.value;
-    //let score = (diceArray[x]) + (diceArray[y]);
 
     if (score == 10) {
       document.getElementById("dice-feedback").innerHTML =
