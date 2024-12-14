@@ -12,8 +12,18 @@ class ProductProperties{
         return this.price * this.quantity;
     }
 
+    //Method to print properties as string
     toString(){
         return "Product: "+this.name+", "+"Price: $"+this.price+", "+"Quantity: "+this.quantity;
+    }
+
+    //Static method to apply discount
+    static applyDiscount(products, discount){
+        let i;
+        for(i = 0; i < products.length; i++){
+            products[i][1] = products[i][1] - (discount / 100);
+        }
+    return console.log(products);
     }
 }
 
@@ -34,7 +44,7 @@ class PerishableProductProperties extends ProductProperties{
 
     //Two instaces of the subclass/parent class with sample data
 
-    const banana = new PerishableProductProperties("banana", 70, 100, "2024-12-31")
+    const banana = new PerishableProductProperties("Banana", 70, 100, "2024-12-31")
 
     const clipper = new ProductProperties("Clipper", 30, 40);
 
@@ -44,3 +54,12 @@ class PerishableProductProperties extends ProductProperties{
     console.log(banana.getTotalValue());
     console.log(banana.toString());
 
+    //---------Creating static Methods and properties ---// 
+
+    const productObject = 
+    [
+        {productName:"Computer", costPerItem:90},{productName:"Pencils", costPerItem:10},
+        {productName:"Bags", costPerItem:80},{productName:"Books", costPerItem:40}
+    ]
+
+   ProductProperties.applyDiscount(productObject, 20);
