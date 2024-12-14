@@ -21,9 +21,9 @@ class ProductProperties{
     static applyDiscount(products, discount){
         let i;
         for(i = 0; i < products.length; i++){
-            products[i][1] = products[i][1] - (discount / 100);
+            products[i].costPerItem = products[i].costPerItem - (discount / 100);
         }
-    return console.log(products);
+    return  console.log(JSON.stringify(products));
     }
 }
 
@@ -62,4 +62,4 @@ class PerishableProductProperties extends ProductProperties{
         {productName:"Bags", costPerItem:80},{productName:"Books", costPerItem:40}
     ]
 
-   ProductProperties.applyDiscount(productObject, 20);
+ProductProperties.applyDiscount(productObject, 20);
