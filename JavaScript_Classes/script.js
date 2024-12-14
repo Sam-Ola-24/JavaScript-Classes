@@ -17,8 +17,30 @@ class ProductProperties{
     }
 }
 
-//Test statements
-// let test = new ProductProperties("Mango", 30, 40);
+//-------section 2 Creating a subclass --------------------------//
 
-// console.log(test.getTotalValue());
-// console.log(test.toString());
+class PerishableProductProperties extends ProductProperties{
+    constructor(name, price, quantity, expirationDate){
+        super(name, price, quantity);
+        this.expirationDate = expirationDate;
+    }
+
+    toString(){
+        return "Product: "+this.name+", "+"Price: $"+this.price+", "+"Quantity: "+this.quantity+
+        " Expiration Date: "+this.expirationDate;
+    }
+
+    }
+
+    //Two instaces of the subclass/parent class with sample data
+
+    const banana = new PerishableProductProperties("banana", 70, 100, "2024-12-31")
+
+    const clipper = new ProductProperties("Clipper", 30, 40);
+
+    console.log(clipper.getTotalValue());
+    console.log(clipper.toString());
+
+    console.log(banana.getTotalValue());
+    console.log(banana.toString());
+
